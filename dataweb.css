@@ -1,0 +1,78 @@
+body{
+	margin:0;
+}
+
+header{
+	background:#999;
+	color: white;
+	padding: 5px 15px 0px 15px;
+	text-align: center;
+}
+
+header h1{
+	color: #006699;
+	margin:0;
+	display:inline;
+	font-family: 'Benton', Helvetica, Arial, sans-serif;
+    font-size: 3em;
+    line-height: 1em;
+    font-weight: bolder;
+    text-align: center;
+    }
+
+}
+
+nav ul{
+	margin:0;
+	padding: 0px 0px 0px 15px;
+	display:inline;
+}
+
+nav ul li{
+	background:#006699;
+	border-radius: 10px 10px 0px 0px;
+	color:white;
+	display: inline-block;
+	list-style-type:none;
+	padding:5px 15px;
+}
+
+nav ul li a{
+	color:white;
+}
+
+.textcontainer1{
+	margin:2%;
+
+}
+
+.intro{
+	 font-family: 'Benton', Helvetica, Arial, sans-serif;
+     font-size: 1.25em;
+     font-weight: bolder;
+     text-transform: uppercase;
+     margin-top: 1em;
+     float: left;
+     width: 100%;
+     
+     padding:0px 0px 10px 0px;
+
+
+}
+
+.gtext{
+	 font-family: Helvetica, Arial, sans-serif;
+     width: 100%;
+     font-size: .9em;
+     line-height: 1.25em;
+     margin-bottom: 1em;
+}
+
+.list ul li a {
+	font-family: 'Benton', Helvetica, Arial, sans-serif;
+	font-size: 70.0pt;
+}
+
+
+
+
