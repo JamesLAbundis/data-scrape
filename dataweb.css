@@ -39,6 +39,31 @@ nav ul li{
 
 nav ul li a{
 	color:white;
+
+}
+
+
+table#t01{
+
+	border:1px solid black;
+	border-collapse: :collapse;
+	width: 40%;
+	text-align: left;
+	vertical-align: top;
+
+}
+
+table#t01 td{
+	width: 10%;
+	text-align: left;
+	vertical-align: top;
+	border: 1px solid #000;
+}
+
+table#t01 caption{
+	font-family: 'Benton', Helvetica, Arial, sans-serif;
+	font-size: 20pt;
+	color:#006699;
 }
 
 .textcontainer1{
