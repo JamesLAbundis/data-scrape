@@ -55,7 +55,7 @@ table#t01{
 
 table#t01 td{
 	width: 10%;
-	text-align: left;
+	text-align: center;
 	vertical-align: top;
 	border: 1px solid #000;
 }
@@ -64,6 +64,14 @@ table#t01 caption{
 	font-family: 'Benton', Helvetica, Arial, sans-serif;
 	font-size: 20pt;
 	color:#006699;
+	text-align: center;
+}
+
+p{
+	text-indent: 50px;
+	margin: 0px 20px 10px 20px;
+
+
 }
 
 .textcontainer1{
@@ -74,13 +82,20 @@ table#t01 caption{
 .intro{
 	 font-family: 'Benton', Helvetica, Arial, sans-serif;
      font-size: 1.25em;
-     font-weight: bolder;
+     font-weight: bold;
      text-transform: uppercase;
      margin-top: 1em;
      float: left;
      width: 100%;
      
      padding:0px 0px 10px 0px;
+}
+
+.intro2{
+	font-family: 'Benton', Helvetica, Arial, sans-serif;
+	font-size: 20pt;
+	font-weight:bolder;
+	text-align: center;
 
 
 }
