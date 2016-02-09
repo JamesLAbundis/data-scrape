@@ -1,0 +1,90 @@
+.graphContainer{
+  border:1px solid blue;
+  position: relative;
+  width:1250px;
+  overflow: hidden;
+  margin:auto;
+}
+
+    #imgcontainer{
+      position:relative;
+      margin-top:6%;
+      float:left;
+      z-index: -5;
+
+    }
+
+    #linegrid{
+      width:100%;
+      height:100%;
+      border-style: solid;
+      border-width: 3px;
+      border-color: red;
+      z-index: 0;
+    }
+
+    #map1{
+      width:624px;
+      height:394px;
+      z-index: -5;
+
+
+    }
+
+
+    #bordercontainer{
+        float:left;
+        
+        width:600px;
+        height:600px;
+        top:50px;
+        left:500px;
+        border-style: solid;
+        border-width: 3px;
+        border-color: green;
+        z-index: -5;
+    }
+
+    #clear {
+    clear: both;
+    }
+
+
+.bord{
+  margin-left: 50%;
+
+  animation-name: stretch;
+  animation-duration: 1.5s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  
+
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(.3);
+    
+  }
+  50% {
+     transform: scale (.7);
+  }
+  100% {
+    transform: scale(1.0);
+
+  }
+}
+
+body,html {
+  height: 100%;
+  width:100%;
+}
+
+body {
+  display: flex;
+ 
+}

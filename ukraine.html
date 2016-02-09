@@ -2,42 +2,82 @@
 <html>
 	<head>
 
-		<Title> Ukraine </title>
+		<Title>Ukraine</title>
 		<link href="dataweb.css" rel="stylesheet" type="text/css"/>
 
 	</head>
 
 	<body>
 
-		<header>
-			<nav>
-				<h1>Ukraine<h1>
-					<ul>
-						<li><a href="dataweb.html">Home</a></li>
-						<li>Ukraine</li>
-						<li><a href="syria.html">Syria</a></li>
-					</ul>
+	<header>
+
+		<nav>
+			<h1>Let's Talk Politics<h1>
+				<ul>
+					<li> <button type="button" class="bt"><a href="dataweb.html">Home</a></button>
+
+
+					</li>
+
+					<li><button type="button" class="bt">Ukraine
+					</button>
+
+					</li>
+
+					<li><button type="button" class="bt"><a href="syria.html">Syria</a></button>
+				   </li>
+
+				   <script type="text/javascript">
+
+				    var buttons=document.getElementsByClassName("bt");
+				    buttons[1].style.background="#dea821";
+				   
+				    </script>
+				    
+				</ul>
 			
-			</nav>
-		</header>
+		</nav>
+
+	</header>
 
 		<div class="textcontainer2">
-			<div class= "intro2"> A Brief Synopsis Of The Ukraine Conflict</div>
+			<div class= "ukrIntro"> A Brief Synopsis Of The Ukraine Conflict</div>
 
-			<div=class="gtext2">
+			<div class="gtext2">
 
 				<p>During February 2014 a series of violent protests broke out involving protestsers, riot police, and the Berkut special police force in the capital Kiev. These protests ultimately lead to the ousting of Viktor Yanukovych, a strong ally of Vladamir Putin. These events were later to become known as the Maidan Revolution, a movement where the Ukraininan people sought closer ties to Europe. </p>
 	
 			
 				<p>The success of the Maidan Revolution was short lived.
-				Russia quickly annexed the Crimean peninsula and supported a rebel uprising in the Donetsk and Luhansk provinces of Eastern Ukraine, to keep Ukraine weak and within Moscow's orbit. A covert war between Ukraine and Russia, a war that Russia denies that it is even a part of soon followed.</p>
+				Russia quickly annexed the Crimean peninsula and supported a rebel uprising in the Donetsk and Luhansk provinces of Eastern Ukraine, to keep Ukraine weak and within Moscow's orbit. A covert war between Ukraine and Russia, a war that Russia denies that it is even a part of, soon followed.</p>
 
 				<p>As a part of Russia's strategy to keep Ukraine weak and ultimately a failed state, Russia first needed to justify its actions to the Russian people and furthermore the world. One of Russia's main strategies in winning support in its military adventures abroad is the use of internet trolls to shape public opinion and distort the truth of events. These trolls have been shown to flood comment sections on western media websites such as Yahoo, New York Times, Guardian, and so forth. Using multiple aliases and account names, internet trolls can take over many forms of social media, making them very effective in spreading disinformation, very quickly.</p>
 
-
 			 </div>
-			
+		</div>
 
+
+		<!--Map With Animation-->
+
+		<button type="button" class="btn"> Animate </button>
+
+		<div class="ukraineMap">
+			<canvas id="circ1" width="300" height="150" style="border:1px solid #d3d3d3;"> </canvas>
+
+			<script>
+
+			var c = document.getElementById("circ1");
+			var ctx = c.getContext("2d");
+			ctx.beginPath();
+			ctx.arc(100, 75, 50, 0, 2 * Math.PI);
+			ctx.fillStyle='red';
+			ctx.fill();
+			ctx.stroke();
+
+			</script> 
+			
+			<img src="assets/map1.jpg" alt="Battle Map">
+			
 		</div>
         
         <!--Navigates to bottom of html with tags-->
