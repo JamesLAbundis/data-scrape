@@ -4,7 +4,8 @@
 
 		<Title>Ukraine</title>
 		<link href="dataweb.css" rel="stylesheet" type="text/css"/>
-
+		<script type="text/javascript" src="assets/circlescript.js"></script>
+		<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
 	</head>
 
 	<body>
@@ -41,86 +42,93 @@
 	</header>
 
 		<div class="textcontainer2">
-			<div class= "ukrIntro"> A Brief Synopsis Of The Ukraine Conflict</div>
+			<div class= "ukrIntro">During War: Truth is the First Victim</div>
 
-			<div class="gtext2">
+			
 
-				<p>During February 2014 a series of violent protests broke out involving protestsers, riot police, and the Berkut special police force in the capital Kiev. These protests ultimately lead to the ousting of Viktor Yanukovych, a strong ally of Vladamir Putin. These events were later to become known as the Maidan Revolution, a movement where the Ukraininan people sought closer ties to Europe. </p>
+			<p>During February 2014 a series of violent protests broke out ultimately lead to the ousting of Viktor Yanukovych, a strong ally of Vladamir Putin. These events were later to become known as the Maidan Revolution, a movement where the Ukraininan people sought closer ties to Europe. </p>
 	
 			
-				<p>The success of the Maidan Revolution was short lived.
-				Russia quickly annexed the Crimean peninsula and supported a rebel uprising in the Donetsk and Luhansk provinces of Eastern Ukraine, to keep Ukraine weak and within Moscow's orbit. A covert war between Ukraine and Russia, a war that Russia denies that it is even a part of, soon followed.</p>
+			<p>The success of the Maidan Revolution was short lived.
+			Russia quickly annexed the Crimean peninsula and supported a rebel uprising in the Donetsk and Luhansk provinces of Eastern Ukraine, to keep Ukraine weak and within Moscow's orbit. A covert war between Ukraine and Russia, a war that Russia denies that it is even a part of, soon followed.</p>
 
-				<p>As a part of Russia's strategy to keep Ukraine weak and ultimately a failed state, Russia first needed to justify its actions to the Russian people and furthermore the world. One of Russia's main strategies in winning support in its military adventures abroad is the use of internet trolls to shape public opinion and distort the truth of events. These trolls have been shown to flood comment sections on western media websites such as Yahoo, New York Times, Guardian, and so forth. Using multiple aliases and account names, internet trolls can take over many forms of social media, making them very effective in spreading disinformation, very quickly.</p>
+			<p>As a part of the Ukrainian conflict, both sides have ramped up propaganda to distort the realities on the battlefield. The Ukraininan conflict is a very sensitive topic for the Russians and Ukrainians with both sides exagerrating the others losses, and under reporting their own during the war. The UN conservatively estimates the death toll to be around 9,115 which includes 2,500 civilians, but I believe the number is much higher. With Russia not officially recognizing that they are at war with Ukraine and hiding their casualties from their own citizens, it is hard to come by casualty counts.</p>
 
-			 </div>
+			<p>
+			With the information available to the public I have put together interactive graphics that break down the Ukrainian conflict into the most major battles. My data contains several unknowns that I wish to update when more credible information becomes available. I can only be as accurate as my sources and if you feel that the data here is incorrect, then I ask you to post alternative sources below. Please enjoy!
+			</p>
+
+			 
 		</div>
 
 
 		<!--Map With Animation-->
 
-		<button type="button" class="btn"> Animate </button>
 
-		<div class="ukraineMap">
-			<canvas id="circ1" width="300" height="150" style="border:1px solid #d3d3d3;"> </canvas>
+		<div class="graphicHolder">
+			<img src="assets/all_battles.png" alt="full map" id="battlemap">
 
-			<script>
+			<canvas class="bord"></canvas>
+			<canvas class="bord"></canvas>
+			<canvas class="bord"></canvas>
+			<canvas class="bord"></canvas>
+			<canvas class="bord"></canvas>
+			<canvas class="bord"></canvas>
+			<canvas class="bord"></canvas>
+			<canvas class="bord"></canvas>
+			<canvas class="bord"></canvas>
+			<canvas class="bord"></canvas>
 
-			var c = document.getElementById("circ1");
-			var ctx = c.getContext("2d");
-			ctx.beginPath();
-			ctx.arc(100, 75, 50, 0, 2 * Math.PI);
-			ctx.fillStyle='red';
-			ctx.fill();
-			ctx.stroke();
 
-			</script> 
-			
-			<img src="assets/map1.jpg" alt="Battle Map">
-			
+			<div id="descrip1">
+				<p>
+					Map Key
+				</p>
+				<div id="key">
+					<canvas id="dpr"></canvas>
+					<canvas id="ukr"></canvas>
+					<canvas id="cease"></canvas>
+				</div>
+				
+				
+				
+
+				<ul>
+					<li>Battle of Iloviask</li>
+					<li>Battle of Horlivka</li>
+					<li>Battle Debaltseve</li>
+					<li>Battle of Marinka</li>
+					<li>Battle of Novoazovsk</li>
+					<li>Battle of Kramatorsk</li>
+					<li>Shyrokyne Standoff</li>
+					<li>Battle of Mariupol</li>
+					<li>First Battle of Donetsk Airport</li>
+					<li>Second Battle of Donetsk Airport</li>
+					<li>Siege of Sloviansk</li>
+				</ul>
+				
+			</div>
+
 		</div>
-        
-        <!--Navigates to bottom of html with tags-->
-		<div="list">
-			<ul>
-				<li><a href="#Guard">Guardian</a></li>
-				<li><a href="#WP">Washington Post</a></li>
-				<li><a href="#Yahoo">Yahoo</a></li>
-			</ul>
-			
-		</div>
+       	
 		
-		<!--Adding dummy table to show current top buzzwords in comment section-->
-		<table align="center" id="t01">
- 			 <caption>Top 10 Buzz Words</caption>
-  			<tr>
-   				<th>Obama</th>
-    			<th>USA</th>
-    			<th>CIA</th>
-    			<th>Rebels</th>
-  			</tr>
-  			<tr>
-   				<td>8576 hits</td>
-    			<td>8999 hits</td>
-    			<td>4677 hits</td>
-    			<td>900 hits</td>
-  			</tr>
-  			
-
-		</table>
+	<script>
+		main();
+		drawDescription();
 
 
+	</script>
 
+	
 
-		<a name="Guard"> Guardian</a>
+	<script>
 
-		<a name="WP"> Washington Post</a>
+	$(function(){
+		$("bord").hide(300);
+	});
 
-		<a name="Yahoo">Yahoo </a>
+	</script>
 
-		<table>
-			
-		</table>
 
 	</body>
 

@@ -13,12 +13,15 @@
 			<img src="eastern_ukraine_bbc.gif" alt="Battle Map" id="map1">
 			
 		</div>
-
-		<canvas id="linegrid">
+		
+		<div id="overlay">
+			<canvas id="linegrid">
 			
-		</canvas>
+			</canvas>
+			
 
-
+		</div>
+	
 		<div id="bordercontainer">
 			<canvas class="bord"></canvas>
 			<canvas class="bord"></canvas>
@@ -33,7 +36,17 @@
 
 	<script type="text/javascript">
 
-	
+	//adds event listender for each canvas
+	/*function addEvent(canvas){
+		canvas.addEventListener("mousedown",flipCircle,false)
+	} 
+
+	function flipCircle(event){
+		canvas_x=event.pageX;
+		canvas_y=event.pageY;
+		alert("X="+ canvas_x+ " Y="+canvas_y);
+
+	}*/
 
 	//Circle radius must be between 35px and 75px
 	//this function scales data accordingly
@@ -87,11 +100,11 @@
 		context.font= "" 
 		}
 
+	//Currently not functional
 	function lineDraw(canvasList){
 		/*----Key-----
 		1:Kramatorsk 2:Donetsk 3:Mariupol
 		4:Horlivka	5:Sloviansk
-
 		*/
 		var x_cords=[348,374,352,395,358];
 		var y_cords=[100,203,335,162,80];
@@ -105,9 +118,6 @@
 			var endX = 100;
 			var endY = 100;
 			var amount = 0;
-
-
-
 		}
 
 
@@ -125,7 +135,6 @@
 
 		var swap=true;
 		var radius=1;
-
 
 		for(i=0; i<borders.length; i++){
 			
@@ -153,15 +162,27 @@
   			//Draws circle for each canvas
   			var scale=scaleNum(deaths[i]);
   			drawCircle(scale,borders[i],deaths[i]);
-		}
 
+  			//addEvent(borders[i]);
+		}
 	}
 
 		//call to main
 		main();
 
 			
-			
+		</script>
+
+		<script src="jquery-1.12.0.min.js">
+
+		$(function(){
+
+			$('.bord').on('click'),function(){
+				$('.bord').fadeOut();
+			});
+
+
+		});
 
 		</script>
 

@@ -80,7 +80,10 @@ table#t01 caption{
 
 	
 p {
-font-size: 1em;
+
+float: left;
+font-size: 1.8em;
+font-style: Arial;
 line-height: 1.25em;
 margin: 1.25em 0;
 text-align: justify;
@@ -94,17 +97,16 @@ text-align: justify;
 	margin-left:15%;
 	margin-right:15%;
 	margin-top: 10%;
+
 }
 
 .textcontainer2{
 	position:relative;
-	border-style: solid;
-    border-width: 5px;
-    border-color: green;
+	
     margin-top: 10%;
     margin-left: 15%;
     margin-right:15%;
-	
+	float:left;	
 
 }
 
@@ -117,14 +119,14 @@ text-align: justify;
      float: left;
      width: 100%;
      
-     padding:10px 30px;
+     padding:10px 0px;
 }
 
 .ukrIntro{
 	font-family: Arial;
 	font-size: 3em;
 	font-weight:bolder;
-	text-align: center;
+	float:left;
 	margin-bottom: 2%;
 
 
@@ -137,12 +139,7 @@ text-align: justify;
      line-height: 1.25em;
      margin-bottom: 1em;
 }
-.gtext2{
-	font-family:Arial;
-    font-size: 1.5em;
-    line-height: 1.25em;
-    margin-bottom: 1em;
-}
+
 
 .list ul li a {
 	font-family: Arial;
@@ -161,12 +158,12 @@ text-align: justify;
 		max-height:800px;	
 	}
 .btn {
-  background: #111112;
-  background-image: -webkit-linear-gradient(top, #111112, #000000);
-  background-image: -moz-linear-gradient(top, #111112, #000000);
-  background-image: -ms-linear-gradient(top, #111112, #000000);
-  background-image: -o-linear-gradient(top, #111112, #000000);
-  background-image: linear-gradient(to bottom, #111112, #000000);
+  background: #006699;
+  background-image: -webkit-linear-gradient(top, #006699, #000000);
+  background-image: -moz-linear-gradient(top, #006699, #000000);
+  background-image: -ms-linear-gradient(top,#006699, #000000);
+  background-image: -o-linear-gradient(top, #006699, #000000);
+  background-image: linear-gradient(to bottom, #006699, #000000);
   -webkit-border-radius: 6;
   -moz-border-radius: 6;
   border-radius: 6px;
@@ -178,15 +175,16 @@ text-align: justify;
   margin-left: 45%;
   box-shadow: 0;
 
+
 }
 
 .btn:hover {
-  background: #111112;
-  background-image: -webkit-linear-gradient(top, #111112, #090a0a);
-  background-image: -moz-linear-gradient(top, #111112, #090a0a);
-  background-image: -ms-linear-gradient(top, #111112, #090a0a);
-  background-image: -o-linear-gradient(top, #111112, #090a0a);
-  background-image: linear-gradient(to bottom, #111112, #090a0a);
+  background: #D3D3D3;
+  background-image: -webkit-linear-gradient(top, #006699, #090a0a);
+  background-image: -moz-linear-gradient(top, #006699, #090a0a);
+  background-image: -ms-linear-gradient(top,#006699, #090a0a);
+  background-image: -o-linear-gradient(top, #006699, #090a0a);
+  background-image: linear-gradient(to bottom,#006699, #090a0a);
   text-decoration: none;
 }
 
@@ -214,16 +212,83 @@ text-align: justify;
 
 }
 
-#circ1{
+.graphicHolder{
 
-	color:red;
+	background: #D3D3D3;
+	position:relative;
+	border-radius: 10px;
+	margin-left: 15%;
+	margin-top: 1%;
+	width:70%;
+	height:570px;
+	box-shadow: 0px 8px 5px #888888;
+	z-index: -2;
+	float:left; 
+	clear: left;
 }
 
-img{
+#battlemap{
 	position: absolute;
-	left:10%;
-    clip: rect(50px,1000px,300px,0px);
+
+	left: 10px;
+	top: 10px;
+	z-index: -1;
 }
+
+#descrip1{
+	position: absolute;
+	left:50%;
+	height:100%;
+	width:350px;
+	border-style: solid;
+    border-width: 3px;
+    border-color: green;
+    z-index:-1;
+
+}
+
+#descrip1 ul{
+	position:absolute;
+	list-style-type: none;
+	top:20%;
+	left:20%;
+}
+
+#descrip1 ul li{
+	padding-top:10px;
+	text-decoration: none;
+	line-height: 1.25em;
+	font-size: 1.2em;
+
+}
+
+#descrip1 p{
+	position: absolute;
+	left:35%;
+	font-size: 1.3em;
+	line-height: 1.25em;
+	line-height: 1.25em;
+	font-style: bold;
+	margin: 1.25em 0;
+	text-align: center;
+	padding:0px 20px 0px 0px;
+}
+
+#key{
+	position:absolute;
+	top:10%;
+	left:20%;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
