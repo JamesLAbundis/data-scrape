@@ -237,13 +237,14 @@ text-align: justify;
 
 #descrip1{
 	position: absolute;
-	left:50%;
+	left:45%;
 	height:100%;
-	width:350px;
+	width:30%;
 	border-style: solid;
     border-width: 3px;
     border-color: green;
     z-index:-1;
+    float:left;
 
 }
 
@@ -265,7 +266,7 @@ text-align: justify;
 #descrip1 p{
 	position: absolute;
 	left:35%;
-	font-size: 1.3em;
+	font-size: 1.4em;
 	line-height: 1.25em;
 	line-height: 1.25em;
 	font-style: bold;
@@ -279,6 +280,29 @@ text-align: justify;
 	top:10%;
 	left:20%;
 }
+
+#defin{
+
+	position: absolute;
+	left:75%;
+	width:20%;
+	height: 100%;
+	float:left;
+	font-size: 1.2em;
+	font-family: Arial;
+	border-style: solid;
+    border-width: 3px;
+    border-color: blue;
+}
+	#defin p{
+		position: relative;
+		text-align: center;
+		padding:20px 10px;
+		font-size: 1.2em;
+
+
+
+	}
 
 
 
