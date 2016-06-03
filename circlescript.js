@@ -48,8 +48,6 @@ function dwCircOne(scale,canvas,index){
 	
 	}
 
-
-
 function setGraph(){
 	//sloviansk-kramatorsk-marinka-mariupol-horlivka-debaltseve-iloviask
 	var xCoords= [156,154,153,149,240,217,199,204,176,178];
@@ -116,8 +114,6 @@ function drawDescription(){
 	context1.fillStyle = "white";
 	context1.textAlign = "center";
 	context1.fillText("DPR", dprCirc.width/2, dprCirc.height/2);
-
-
 
 	context2.beginPath();
 	context2.arc(scale,scale,scale, 0, 2 * Math.PI, false);
@@ -229,7 +225,5 @@ function makeBattles(){
 	  	var scale=scaleNum(civCasual[i]);
 	  		dwCircTwo(scale,circs[i],civCasual[i]);
 		}
-
-
 	}
 

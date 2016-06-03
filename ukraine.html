@@ -5,7 +5,8 @@
 		<Title>Ukraine</title>
 		<link href="dataweb.css" rel="stylesheet" type="text/css"/>
 		<script type="text/javascript" src="assets/circlescript.js"></script>
-		<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+		<script type= "text/javascript" src="assets/d3.min.js"> </script>
+		<script type= "text/javascript" src="assets/donuts.js"> </script>
 	</head>
 
 	<body>
@@ -13,26 +14,32 @@
 	<header>
 
 		<nav>
-			<h1>Let's Talk Politics<h1>
+			<h1>Let&rsquo;s Talk Politics<h1>
 				<ul>
-					<li> <button type="button" class="bt"><a href="dataweb.html">Home</a></button>
+					<li> 
+						<button type="button" class="bt"><a href="home.html">Home</a></button>
+					</li>
 
+					<li>
+						<button type="button" class="bt">Ukraine</button>
 
 					</li>
 
-					<li><button type="button" class="bt">Ukraine
-					</button>
+					<li>
+						<button type="button" class="bt"><a href="syria.html">Syria</a></button>
+				   </li>
 
-					</li>
+				   <li>
+						<button type="button" class="bt"><a href="demo.html">Demo</a></button>
+				   </li>
 
-					<li><button type="button" class="bt"><a href="syria.html">Syria</a></button>
+					<li>
+						<button type="button" class="bt"><a href="history.html">History</a></button>
 				   </li>
 
 				   <script type="text/javascript">
-
-				    var buttons=document.getElementsByClassName("bt");
-				    buttons[1].style.background="#dea821";
-				   
+					    var buttons=document.getElementsByClassName("bt");
+					    buttons[1].style.background="#dea821";
 				    </script>
 				    
 				</ul>
@@ -41,49 +48,47 @@
 
 	</header>
 
+	<div class="maincontainer">
 		<div class="textcontainer2">
-			<div class= "ukrIntro">During War: Truth is the First Victim</div>
-
-			
+	
+			<div class= "hed2">During War:<br>Truth is the First Victim</div>
 
 			<p>During February 2014 a series of violent protests broke out ultimately lead to the ousting of Viktor Yanukovych, a strong ally of Vladamir Putin. These events were later to become known as the Maidan Revolution, a movement where the Ukraininan people sought closer ties to Europe. </p>
 	
-			
 			<p>The success of the Maidan Revolution was short lived.
 			Russia quickly annexed the Crimean peninsula and supported a rebel uprising in the Donetsk and Luhansk provinces of Eastern Ukraine, to keep Ukraine weak and within Moscow's orbit. A covert war between Ukraine and Russia, a war that Russia denies that it is even a part of, soon followed.</p>
 
 			<p>As a part of the Ukrainian conflict, both sides have ramped up propaganda to distort the realities on the battlefield. The Ukraininan conflict is a very sensitive topic for the Russians and Ukrainians with both sides exagerrating the others losses, and under reporting their own during the war. The UN conservatively estimates the death toll to be around 9,115 which includes 2,500 civilians, but I believe the number is much higher. With Russia not officially recognizing that they are at war with Ukraine and hiding their casualties from their own citizens, it is hard to come by casualty counts.</p>
 
-			<p>
-			With the information available to the public I have put together interactive graphics that break down the Ukrainian conflict into the most major battles. My data contains several unknowns that I wish to update when more credible information becomes available. I can only be as accurate as my sources and if you feel that the data here is incorrect, then I ask you to post alternative sources below. Please enjoy!
+			<p>With the information available to the public I have put together interactive graphics that break down the Ukrainian conflict into the most major battles. My data contains several unknowns that I wish to update when more credible information becomes available. I can only be as accurate as my sources and if you feel that the data here is incorrect, then I ask you to post alternative sources below. Please enjoy!
 			</p>
-
-			 
+	
 		</div>
 
 
 		<!--Map With Animation-->
-
+		<div class="hed2">Ukraine Conflict:<br>Signficant Battles</div>
 
 		<div class="graphicHolder">
-			<img src="assets/all_battles.png" alt="full map" id="battlemap">
 
-			<canvas class="bord"></canvas>
-			<canvas class="bord"></canvas>
-			<canvas class="bord"></canvas>
-			<canvas class="bord"></canvas>
-			<canvas class="bord"></canvas>
-			<canvas class="bord"></canvas>
-			<canvas class="bord"></canvas>
-			<canvas class="bord"></canvas>
-			<canvas class="bord"></canvas>
-			<canvas class="bord"></canvas>
+			<img src="assets/ukraine_base_top_dt.png" alt="full map" id="battlemap1">
+			<img src="assets/ukraine_base_bottom_dt.png" alt="detail map" id="battlemap2">
 
+<!-- 			<canvas class="bord"></canvas>
+			<canvas class="bord"></canvas>
+			<canvas class="bord"></canvas>
+			<canvas class="bord"></canvas>
+			<canvas class="bord"></canvas>
+			<canvas class="bord"></canvas>
+			<canvas class="bord"></canvas>
+			<canvas class="bord"></canvas>
+			<canvas class="bord"></canvas>
+			<canvas class="bord"></canvas>
+ -->
 
-			<div id="descrip1">
-				<p>
-					Map Key
-				</p>
+<!-- 			<div id="descrip1">
+				<p>Map Key</p>
+
 				<div id="key">
 					<canvas id="dpr"></canvas>
 					<canvas id="ukr"></canvas>
@@ -104,35 +109,153 @@
 					<li>Second Battle of Donetsk Airport</li>
 					<li>Siege of Sloviansk</li>
 				</ul>
-			</div>
-
-			<div id="defin">
-				<p>	DPR</p>
+ -->
+			<!-- </div> --><!-- YOU HAD AN EXTRA DIV HERE -->
+			
+<!-- 			<div id="defin">
+				<p>DPR</p>
 				<p>Dontesk People's Republic</p>
 				<p>UAF</p>
 				<p>Ukraine Armed Forces</p>
+			</div> --><!-- DEFIN -->
+
+		<!-- </div> --><!-- DESCRIPT1 -->
+
+
+
+		<div class="battleholder">
+
+			<div class="battle">
+
+			
+				
+				<div class="battlehed"> Battle of Iloviask</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+				<div class="circontainer">
+						<div id="ukr_key"></div>
+						<div id="dpr_key"></div>
+				</div>
+
+
+
 			</div>
 
-		</div>
-       	
+			<div class="battle">
+				
+				
+				<div class="battlehed">Battle of Horlivka</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div class="circontainer">
+				</div>
+			</div>
+
+			<div class="battle">
+				
+
+				<div class="battlehed">Battle of Debaltseve</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div class="circontainer">
+				</div>
+			</div>
+			
+			<div class="battle">
+			
+
+				<div class="battlehed">Battle of Marinka</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div class="circontainer">
+				</div>
+			</div>
+
+			<div class="battle">
 		
-	<script>
-		main();
-		drawDescription();
+				<div class="battlehed">Battle of Mariupol</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div class="circontainer">
+				</div>
+			</div>
+
+			<div class="battle">
+				
+				
+				<div class="battlehed">Battle of Novoazovsk</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div class="circontainer">
+					
+				</div>
+			</div>
+
+			<div class="battle">
+
+				<div class="battlehed">Battle of Kramatorsk</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+				<div class="circontainer">
+					
+				</div>
+			</div>
+
+			<div class="battle">
+				
+				<div class="battlehed">Shyrokyne Standoff</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+				<div class="circontainer">
+				</div>
+			</div>
+
+			<div class="battle">
+
+				<div class="battlehed">First Battle of Donetsk Airport</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+				<div class="circontainer">
+				</div>
+			</div>
+
+			<div class="battle">
+				
+
+				<div class="battlehed">Second Battle of Donetsk Airport</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+				<div class="circontainer">
+				</div>
+			</div>
+
+			<div class="battle">
 
 
-	</script>
+				<div class="battlehed">Siege of Sloviansk</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div class="circontainer">
+				</div>
+			</div>
 
+		</div><!-- BATTLEHOLDER -->
+
+		<script>
+
+				drawDonuts();
+
+		</script>
+    
+    </div><!-- MAINCONTAINER -->   	
 	
+	<!-- 	
+	// <script>
+	// 	setGraph();
+	// 	drawDescription();
+	// 	makeBattles();
+	// </script>
 
-	<script>
-
-	$(function(){
-		$("bord").hide(300);
-	});
-
-	</script>
-
+	// <script>
+	// 	$(function(){
+	// 		$("bord").hide(300);
+	// 	});
+	// </script>
+	-->  
 
 	</body>
 

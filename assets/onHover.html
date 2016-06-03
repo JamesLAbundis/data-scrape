@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+	<head>
+		<title> D3 On Hover Test</title>
+		<script type= "text/javascript" src="d3.min.js"> </script>
+	</head>
+
+	<body>
+
+		<div class="city"></div>
+		<div class="bubble"></div>
+
+		<script>
+		
+		var svgCirc= d3.select(".city").append("svg")
+			.attr("width",200)
+			.attr("height",200);
+
+		svgCirc.append("circle")
+            .attr("cx", 50)
+ 		    .attr("cy", 50)
+			.attr("r", 20)
+
+		    .on('mouseenter',function() {
+		      var svgBubble= d3.select(".bubble").append("svg")
+		     	.attr("width",100)
+				.attr("height",100);
+				
+			  svgBubble.enter().append("circle")
+			  	.style('opacity', 0)
+		      	.attr("cx", 100)
+	 		    .attr("cy", 100)
+				.attr("r", 20);
+
+			  svgBubble.transition()
+			  	.delay(1000)
+			  	.duration(1000)
+			  	.style('opacity', 0);
+		    })
+		    .on('mouseleave',function () {
+		    	var svg=d3.select(".bubble");
+		    	svg.selectAll("*").remove();
+		     
+	      })
+		</script>
+		
+	</body>
+</html>
