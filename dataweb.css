@@ -5,15 +5,18 @@ header{
 	background:	#EEEEEE;
 	padding: 10px 0px 0px 0px;
 	height:120px;
+	width:100%;
 }
 	header h1{
 		color: #006699;
-		font-family: 'Georgia', Times New Roman, Times, serif;
+		font-family: 'Helvetica', Arial, sans-serif;
 	    font-size: 3em;
 	    line-height: 1em;
 	    font-weight: 800;
 	    text-align: center;
-	    width: 100%
+	    width: 100%;
+	    position: fixed;
+	   
 	    }
 
 /*NAVIGATION*/
@@ -21,6 +24,7 @@ header{
 nav{
 	border-bottom: 1px solid #000;
 	background-color: #EEEEEE;
+
 }
 	nav ul{
 		background-color:#006699;
@@ -118,7 +122,7 @@ p {
 	width: 100%;
     margin: 1em 0 .25em 0;
 	float: left;
-	text-align: center;
+	margin:auto;
 	/*margin-left: 20%;*/
 }
 .hed3{
@@ -127,6 +131,16 @@ p {
      font-weight: 900;
      margin: 1em 0 .25em 0;
      float: left;
+     width: 100%;
+}
+
+.hed4{
+	font-family: 'Helvetica', Arial, sans-serif;
+     font-size: 1.5em;
+     font-weight: 700;
+     margin: .5em 0 .25em 0;
+     float: left;
+     opacity: 0.7;
      width: 100%;
 }
 .label1{
@@ -146,6 +160,11 @@ p {
 /*CONTAINERS*/
 .maincontainer{
 	margin: 10% 15% 0 15%;
+	width: 70%; 
+}
+
+.graphcontainer{
+	margin: 5% 15% 0 15%;
 	width: 70%; 
 }
 .textcontainer1{
@@ -345,11 +364,32 @@ p {
 					 display: inline;
 				}
 	*/
+.clip-ellipse{
+	width: 150px;
+    height: 200px;
+    background: blue;
+    -moz-border-radius: 100px / 50px;
+    -webkit-border-radius: 100px / 50px;
+    border-radius: 100px / 130px;
+}
 
+.imgcontainer{
+	margin-left:25%;
+	float:left;
+
+}
 /*IMAGES*/
 /*IMAGES*/
 /*history page*/
 
+figcaption{
+	text-align: center;
+	font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    width: 100%;
+
+}
 
 
 
