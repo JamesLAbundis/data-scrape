@@ -1,21 +1,27 @@
 body{
-	margin:0;
+	margin:0px;
+	padding:0px;
 }
 header{
+	margin-top: -14%;
+	height:100px;
 	background:	#EEEEEE;
-	padding: 10px 0px 0px 0px;
-	height:120px;
+	padding: 10px 0px 10px 0px;
 	width:100%;
+	z-index: 1;
+    position: fixed;
+
 }
 	header h1{
 		color: #006699;
 		font-family: 'Helvetica', Arial, sans-serif;
-	    font-size: 3em;
+	    font-size: 2.5em;
 	    line-height: 1em;
 	    font-weight: 800;
 	    text-align: center;
 	    width: 100%;
-	    position: fixed;
+	    height:30px;
+	    z-index: 1;
 	   
 	    }
 
@@ -24,7 +30,8 @@ header{
 nav{
 	border-bottom: 1px solid #000;
 	background-color: #EEEEEE;
-
+	padding: 10px 0px 0px 0px;
+	
 }
 	nav ul{
 		background-color:#006699;
@@ -159,7 +166,7 @@ p {
 
 /*CONTAINERS*/
 .maincontainer{
-	margin: 10% 15% 0 15%;
+	margin: 8% 15% 0 15%;
 	width: 70%; 
 }
 
@@ -388,6 +395,17 @@ figcaption{
     font-size: 1em;
     font-weight: 700;
     width: 100%;
+}
+#perc{
+	text-align: center;
+	color: #006699;
+	font-family: 'Helvetica', Arial, sans-serif;
+	font-size: 3.5em;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px #000000;
+
+
+
 
 }
 
