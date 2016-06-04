@@ -3,7 +3,7 @@ body{
 	padding:0px;
 }
 header{
-	margin-top: -14%;
+	margin-top: -12%;
 	height:100px;
 	background:	#EEEEEE;
 	padding: 10px 0px 10px 0px;
@@ -180,6 +180,8 @@ p {
 .textcontainer2{
 	position:relative;
 	float:left;	
+	display: inline;
+	margin-left: 70%;
 }
 
 /*HISTORY SPECIAL CODING*/
@@ -403,12 +405,10 @@ figcaption{
 	font-size: 3.5em;
     font-weight: 700;
     text-shadow: 2px 2px 4px #000000;
-
-
-
-
 }
-
+iframe{
+	border: 1px solid red;
+}
 
 
 
