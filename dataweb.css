@@ -10,7 +10,7 @@ header{
 	width:100%;
 	z-index: 1;
     position: fixed;
-    margin-top:-2%;
+    margin-top:-3%;
 
 }
 	header h1{
@@ -41,7 +41,8 @@ header{
 }
 .imgcontainer{
 	margin-left:25%;
-	float:left;
+	display: inline-block;
+	margin-top: 2%;
 
 }
 
@@ -361,18 +362,17 @@ p {
     -webkit-border-radius: 999px;
     -moz-border-radius: 999px;
     behavior: url(PIE.htc);}
-}
 /*IMAGES*/
 /*IMAGES*/
 /*history page*/
 
 
 figcaption{
-	text-align: center;
 	font-family: 'Helvetica', Arial, sans-serif;
     font-size: 1em;
     font-weight: 700;
     width: 100%;
+    text-align: center;
 }
 #perc{
 	text-align: center;
