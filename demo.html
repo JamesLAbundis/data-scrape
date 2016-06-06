@@ -2,7 +2,7 @@
 <html>
 	<head>
 
-		<Title>Democratic National Analysis</title>
+		<Title>Democratic Presidential Primary</title>
 		<link href="dataweb.css" rel="stylesheet" type="text/css"/>
 		<script type="text/javascript" src="assets/circlescript.js"></script>
 		<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
@@ -43,14 +43,11 @@
 
 		<div class="maincontainer"> 
 
-			<div class="hed1">Democratic National Analysis</div>
+			<div class="hed1">Democratic Presidential Primary</div>
 			
-			<p>Below is an in-depth analysis of the Democratic Primary up until late March. 28 states are included in total. The analysis includes determining what factors such as race, sex, income, etc., contribute to the fraction of the vote each candidate wins. A multi-variable linear regression model was used to test these factors and predict future primaries.</p>
+			<p>Below is an in-depth analysis of the Democratic Primary up until late March. The following data was found in a public data set that I then analyzed and aggregated. 28 states are included in total. The analysis studys factors such as race, sex, income, etc., that contribute to the fraction of the vote each candidate wins. A multi-variable linear regression model was used to test these factors and predict future primaries.</p>
 		
-		</div> <!-- MAINCONTAINER -->
 
-
-		<div class="maincontainer"> 
 			<div class="hed3">The Candidates</div>
 
 			<div class = "imgcontainer">
@@ -61,79 +58,154 @@
 			<div class = "imgcontainer">
 				<img src="politics/hrc.jpg" class = "clip-ellipse" >
 				<figcaption>Hillary Clinton</figcaption>
-
 			</div>
-		</div> <!-- MAINCONTAINER -->
 
-		<div class="maincontainer"> 
 			<div class="hed3">Socio-Economic Factors</div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</div> <!-- MAINCONTAINER -->
-
+			<p>In order to build a proper model to predict future primaries, one must first analyze previous primaries. In the following scatter plots we look at how race, education, sex, economic class, population, and age contribute to each candidates fraction of the vote. Some of these factors contribute more than others to the final outcome, but nonetheless are worth exploring.The fraction of the vote is the response variable and the factors mentioned above are the predictor variables. </p>
 		
-		<div class="graphcontainer"> 
-			<div class="hed4">Sex</div>
-			<iframe width="600" height="500" frameborder="0" scrolling="no" src="https://plot.ly/~jlabundi/11.embed"></iframe>
-			<div class = "textcontainer2">Description goes here</div>
-		</div> 
+			<div class="graphcontainer"> 
+	
+				<div class="hed4">Sex</div>
 
-		<div class="graphcontainer"> 
-			<div class="hed4">Age</div>
-			<iframe width="600" height="500" frameborder="0" scrolling="no" src="https://plot.ly/~jlabundi/4.embed"></iframe>
-		</div>
+				<p>The following graph shows the correlation between the average percent of females in every state and the fraction of the vote each candidate received.</p>
 
-		<div class="graphcontainer"> 
-			<div class="hed4">Education</div>
-			<iframe width="600" height="500" frameborder="0" scrolling="no" src="https://plot.ly/~jlabundi/9.embed"></iframe>
-		</div> 
+				<p>Hovering over each point will show information on what state it represents and the fraction of the vote the candidate won for that state.</p>
 
-		<div class="graphcontainer"> 
-			<div class="hed4">Economic Class</div>
-			<iframe width="600" height="500" frameborder="0" scrolling="no" src="https://plot.ly/~jlabundi/13.embed"></iframe>
-		</div> 
+				<div id="charts">
+					<iframe width="600" height="500" frameborder="0" scrolling="no" link="false" src="https://plot.ly/~jlabundi/11.embed?link=false"></iframe>
+				</div>
+			</div> 
 
-		<div class="graphcontainer"> 
-			<div class="hed4">Race</div>
-			<iframe width="600" height="500" frameborder="0" scrolling="no" src="https://plot.ly/~jlabundi/7.embed"></iframe>
-		</div> 
-
-		<div class="graphcontainer"> 
-			<div class="hed4">Population</div>
-			<iframe width="600" height="500" frameborder="0" scrolling="no" src="https://plot.ly/~jlabundi/15.embed"></iframe>
-		</div> 
-
-		<div class="graphcontainer"> 
-			<div class="hed4">How Demographics Shaped the Final Result</div>
-			<iframe width="600" height="500" frameborder="0" scrolling="no" src="https://plot.ly/~jlabundi/19.embed"></iframe>
-		</div> 
-
-		<div class="maincontainer"> 
-			<div class="hed3">Prediction Model</div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</div> <!-- MAINCONTAINER -->
-
-		<div class="graphcontainer"> 
-			<div class="hed4">Model Predictions For Past Primaries</div>
-			<iframe width="600" height="500" frameborder="0" scrolling="no" src="https://plot.ly/~jlabundi/0.embed"></iframe>
+			<div class="graphcontainer"> 
+	
+				<div class="hed4">Age</div>
 			
-		</div> 
+				<p>The following graph shows the correlation between the average percent of people over 65 years of age in every state and the fraction of the vote each candidate received.</p>
+				<p>Hovering over each point will show information on what state it represents and the fraction of the vote the candidate won for that state.</p>
+			
+				<div id="charts">
+					<iframe width="600" height="500" frameborder="0" scrolling="no" link="false"src="https://plot.ly/~jlabundi/4.embed?link=false"></iframe>
+				</div>	
+			</div>
 
-		<div class="graphcontainer"> 
-			<div class="hed4">Model Predictions For Future Primaries</div>
-			<iframe width="600" height="500" frameborder="0" scrolling="no" src="https://plot.ly/~jlabundi/17.embed"></iframe>
-		</div> 
+			<div class="graphcontainer"> 
 
-		<div class="graphcontainer"> 
-			<div class="hed4">Model Accuracy</div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div class="hed4">Education</div>
 
-			<div id = "perc">64.3% Accuracy</div>
-		</div> 
+				<p>The following graph shows the correlation between the average percent of people who have achieved education equal to or greater than completing high school in every state and the fraction of the vote each candidate received.</p>
+				<p>Hovering over each point will show information on what state it represents and the fraction of the vote the candidate won for that state.</p>
 
-		<div class="maincontainer"> 
+				<div id="charts">
+					<iframe width="600" height="500" frameborder="0" scrolling="no" link="false" src="https://plot.ly/~jlabundi/9.embed?link=false"></iframe>
+				</div>			
+			</div> 
+
+			<div class="graphcontainer"> 
+
+				<div class="hed4">Economic Class</div>
+
+				<p>The following graph shows the correlation between the average median income in every state and the fraction of the vote each candidate received.</p>
+				<p>Hovering over each point will show information on what state it represents and the fraction of the vote the candidate won for that state.</p>
+
+				<div id="charts">
+					<iframe width="600" height="500" frameborder="0" scrolling="no" link="false" src="https://plot.ly/~jlabundi/13.embed?link=false"></iframe>
+				</div>
+			</div> 
+
+			<div class="graphcontainer"> 
+
+				<div class="hed4">Race</div>
+
+				<p>The following graph shows the correlation between the average percent of white-only citizens in every state and the fraction of the vote each candidate received.</p>
+				<p>Hovering over each point will show information on what state it represents and the fraction of the vote the candidate won for that state.</p>
+
+				<div id="charts">
+					<iframe width="600" height="500" frameborder="0" scrolling="no" link="false" src="https://plot.ly/~jlabundi/7.embed?link=false"></iframe>
+				</div>
+			</div> 
+
+			<div class="graphcontainer"> 
+
+				<div class="hed4">Population</div>
+
+				<p>The following graph shows the correlation between the average population density in every state and the fraction of the vote each candidate received.</p>
+				<p>Hovering over each point will show information on what state it represents and the fraction of the vote the candidate won for that state.</p>
+
+				<div id="charts">
+					<iframe width="600" height="500" frameborder="0" scrolling="no" link="false" src="https://plot.ly/~jlabundi/15.embed?link=false"></iframe>
+				</div>
+			</div> 
+
+			<div class="graphcontainer"> 
+
+				<div class="hed4">How Demographics Shaped the Final Result</div>
+	
+				<p>This graph shows the extent to which each socio-economic factor contributed to the fraction of the vote won by each candidate. The higher the R-Squared value, the stronger the relationship is between a socio-economic factor and the fraction of the vote. According to my analysis, education, race, and income are the strongest indicators of how much of the vote each candidate will win.</p>
+	
+				<p>R-Squared values are interpreted as the following: Values closer to 1 suggest a stronger correlation (relationship) between two variables, values closer to 0 suggest a weaker correlation (relationship) between two variables. 
+				</p>
+				<p>Slope should be interpreted as the following: a negative slope suggests a negative correlation (relationship) between two variables and a positive slope will just be the opposite of this. For example a negative slope between education and the fraction of the vote for Hillary Clinton suggests that as a population's education increases, the fraction of the vote for Hillary Clinton will decrease.
+				</p>
+
+				<p>Hover over each bar to display the R-Squared value and the slope, which will indicate a positive or negative correlation.</p>
+
+
+				<div id="charts">
+					<iframe width="600" height="500" frameborder="0" scrolling="no" link="false" src="https://plot.ly/~jlabundi/19.embed?link=false"></iframe>
+				</div>
+			</div> 
+
+			<div class="hed3">Prediction Model</div>
+			<p>After studying the correlations between the above socio-economic variables/factors and the response variable: fraction of the vote, I decided to make a multi-variable linear regression model using these factors to predict future primaries. My results are split into two categories: predictions that happened after the publishing of the data set (Late March) and primaries that have yet to happen at the time of this post. We can use the first category to test the model accuracy and study the second category to anticipate future outcomes.</p>
+
+			<div class="graphcontainer"> 
+			
+				<div class="hed4">Model Predictions For Past Primaries</div>
+
+				<p> The following graph shows what the model predicted for primaries that have occurred after late March up until the end of May. Not only does this graph show who the predicted winner is, but it shows the estimated margin between the two candidates. </p>
+				<p> Since these primaries have already occurred we can find whether the model predicted correctly. Hovering over each bar will show whether the prediction was true or false.</p>
+
+				<div id="charts">
+					<iframe width="600" height="500" frameborder="0" scrolling="no" link="false"src="https://plot.ly/~jlabundi/0.embed?link=false"></iframe>
+				</div>
+			</div> 
+
+			<div class="graphcontainer"> 
+	
+				<div class="hed4">Model Predictions For Future Primaries</div>
+
+				<p> The following graph shows what the model predicted for primaries that will take place on June 7th. Not only does this graph show the predicted winner, but it shows the estimated margin between the two candidates. </p>
+				<p> Hovering over each bar will display estimated margin values.</p>
+		
+				<div id="charts">
+					<iframe width="600" height="500" frameborder="0" scrolling="no" link= "false" src="https://plot.ly/~jlabundi/17.embed?link=false"></iframe>
+				</div>
+			</div> 
+
+			<div class="graphcontainer"> 
+				<div class="hed4">Model Accuracy</div>
+				<p>I calculated the model accuracy by finding the number of primaries that the model predicted correctly over the total number of primaries that happened after the data set was published. The model was able to predict the correct winner of a primary 64.3% of the time.</p>
+				<p>It is important to note that this model represents a snapshot of the Democratic Presidential Primary. Despite being able to include several socio-economic factors in my model, there are factors that I was unable to measure such as: media coverage for each candidate, social media presence, media bias, Google searches for each candidate, and etc.</p>
+
+				<p>Lastly, some of the predicted win margins above are quite unrealistic. It is very rare that any candidate wins a state by a 50 or 40 perecent margin, but this should be interpreted as one candidate is predicted to handily win a state over the other.</p>
+
+				<div id = "perc">64.3% Accuracy</div>
+			</div> 
+
 			<div class="hed3">Conclusion</div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>My analysis in conclusion has brought up interesting trends that have even taken me by surprise. Part of my motivation to study the Democratic Presidential Primary was to find my own conclusions about why or why not certain candidates were winning or losing. The media to some extent has claimed that Sanders does better among states with large white populations and Clinton fairs better with larger women and minority populations. My analysis however disconfirms most of these claims and has found that each candidate has support from all ages and both genders. Race is a factor in determining the fraction of the vote, however the correlation is not as strong as the media claimed it to be.</p>
+
+			<p>It is also important to note the following: My model does not reflect several media influences that shape the outcome of the Democratic Presidential Primary. Other factors such as candidate likeability, candidate scandals, and key events during the course of a Democratic Presidential Primary can affect state primary results significantly. Despite doing my best to make an accurate model, I would not be surprised if my predictions for the June 7th super Tuesday are proven wrong. I will post a more in depth post-analysis after the 2016 Democratic Presidential Primary has finished. Stay tuned and as always, thank you for reading. </p>
+
+			<div class="hed4">Media and Data Sources</div>
+
+			<ol class = "sources">
+				<li><a href= "http://betonbernie2016.com/wp-content/uploads/2015/04/BERNIE-6.jpg">Data Set</a> </li>
+				<li><a href = "http://betonbernie2016.com/wp-content/uploads/2015/04/BERNIE-6.jpg" >Bernie Sanders Image</a></li>
+				<li><a href ="http://img2-1.timeinc.net/people/i/2015/news/150420/hillary-clinton-04-435.jpg">Hillary Clinton Image</a></li>
+
+			</ol>
+
+
 		</div> <!-- MAINCONTAINER -->
-
-
 	</body>

@@ -3,13 +3,14 @@ body{
 	padding:0px;
 }
 header{
-	margin-top: -12%;
+	top: 0px;
 	height:100px;
 	background:	#EEEEEE;
 	padding: 10px 0px 10px 0px;
 	width:100%;
 	z-index: 1;
     position: fixed;
+    margin-top:-2%;
 
 }
 	header h1{
@@ -22,13 +23,48 @@ header{
 	    width: 100%;
 	    height:30px;
 	    z-index: 1;
+
+
 	   
 	    }
 
+/*CONTAINERS*/
+.maincontainer{
+	width: 70%; 
+	margin: 175px 15% 0 15%;
+	float: left;
+	height: auto;
+}
+.listcontainer{
+	float: left;
+	margin:auto;
+}
+.imgcontainer{
+	margin-left:25%;
+	float:left;
+
+}
+
+.graphcontainer{
+	margin: 0 auto;
+	width: 100%;
+}
+#charts{
+	width: 700px;
+	margin: 0 auto;
+	display: block;
+}
+.textcontainer1{
+	position: relative;
+}
+.textcontainer2{
+	/*position: relative;*/
+	width: 100%;
+	float: left;
+}
 /*NAVIGATION*/
 /*NAVIGATION*/
 nav{
-	border-bottom: 1px solid #000;
 	background-color: #EEEEEE;
 	padding: 10px 0px 0px 0px;
 	
@@ -36,19 +72,20 @@ nav{
 	nav ul{
 		background-color:#006699;
 		position:relative;
-		height:50px;
+		height:40px;
 		box-shadow: 0px 8px 5px #888888;
 	}
 	nav ul li{
 		float: left; 
 	  	position: relative;
-	  	bottom: 15%;
+	  	bottom: 20%;
 		list-style-type:none;
 		overflow:hidden;
 	}
 	nav ul li a{
 		color: white;
 		text-decoration: none;
+  	
 	}
 
 /*BUTTONS*/
@@ -90,8 +127,9 @@ nav{
 	background-color:#006699;
 	cursor: pointer;
 	width:100px;
-	height:48px;
+	height:40px;	
 	letter-spacing: 0;
+
 }
 
 .bt:hover{
@@ -110,11 +148,12 @@ p {
 	font-family: 'Georgia', Times New Roman, Times, serif;
 	line-height: 1.25em;
 	margin: auto;
-	text-align: justify;
+	text-align: left;
+	padding: 10px 0px 10px 0px;
 }
 .hed1{
 	font-family: 'Helvetica', Arial, sans-serif;
-     font-size: 3em;
+     font-size: 2.6em;
      font-weight: 900;
      text-transform: uppercase;
      margin: 1em 0 .25em 0;
@@ -143,12 +182,25 @@ p {
 
 .hed4{
 	font-family: 'Helvetica', Arial, sans-serif;
-     font-size: 1.5em;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: .5em;
+    margin-bottom: 1em;
+    float: left;
+    opacity: 0.7;
+    width: 100%;
+    padding: 5px 0; 
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.hed5{
+	 font-family: 'Helvetica', Arial, sans-serif;
+     font-size: 1.3em;
      font-weight: 700;
-     margin: .5em 0 .25em 0;
-     float: left;
+     text-align: center;
      opacity: 0.7;
      width: 100%;
+     float: left;
 }
 .label1{
 	font-family: 'Helvetica', Arial, sans-serif;
@@ -164,25 +216,7 @@ p {
 	float: left;
 }
 
-/*CONTAINERS*/
-.maincontainer{
-	margin: 8% 15% 0 15%;
-	width: 70%; 
-}
 
-.graphcontainer{
-	margin: 5% 15% 0 15%;
-	width: 70%; 
-}
-.textcontainer1{
-	position: relative;
-}
-.textcontainer2{
-	position:relative;
-	float:left;	
-	display: inline;
-	margin-left: 70%;
-}
 
 /*HISTORY SPECIAL CODING*/
 .key1{width: 50%; float: left;}
@@ -279,60 +313,6 @@ p {
 			float: left;
 		}
 
-/*		#descrip1{
-			position: absolute;
-			left:45%;
-			height:100%;
-			width:30%;
-			border: 1px solid green;
-		    z-index:-1;
-		    float:left;
-		}
-		#descrip1 ul{
-			position:absolute;
-			list-style-type: none;
-			top:20%;
-			left:20%;
-		}
-		#descrip1 ul li{
-			padding-top:10px;
-			text-decoration: none;
-			line-height: 1.25em;
-			font-size: 1.2em;
-
-		}
-		#descrip1 p{
-			position: absolute;
-			left:35%;
-			font-size: 1.4em;
-			line-height: 1.25em;
-			line-height: 1.25em;
-			font-style: bold;
-			margin: 1.25em 0;
-			text-align: center;
-			padding:0px 20px 0px 0px;
-		}
-		#key{
-			position:absolute;
-			top:10%;
-			left:20%;
-		}
-		#defin{
-			position: absolute;
-			left:75%;
-			width:20%;
-			height: 100%;
-			float:left;
-			font-size: 1.2em;
-			font-family: Arial;
-			border: 1px solid blue;
-		}
-			#defin p{
-				position: relative;
-				text-align: center;
-				padding:20px 10px;
-				font-size: 1.2em;
-			}*/
 
 .battleholder{
 /*	position: relative;
@@ -374,22 +354,18 @@ p {
 				}
 	*/
 .clip-ellipse{
-	width: 150px;
-    height: 200px;
+	width: 175px;
+    height: 175px;
     background: blue;
-    -moz-border-radius: 100px / 50px;
-    -webkit-border-radius: 100px / 50px;
-    border-radius: 100px / 130px;
-}
-
-.imgcontainer{
-	margin-left:25%;
-	float:left;
-
+	border-radius: 50%;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    behavior: url(PIE.htc);}
 }
 /*IMAGES*/
 /*IMAGES*/
 /*history page*/
+
 
 figcaption{
 	text-align: center;
@@ -406,10 +382,26 @@ figcaption{
     font-weight: 700;
     text-shadow: 2px 2px 4px #000000;
 }
-iframe{
-	border: 1px solid red;
-}
 
+#stateli{
+	
+	display: block;
+    width: 25%;
+    padding:5px 0px 5px 0px;
+    float: left;
+    
+
+}
+#statetag{
+	text-decoration: none;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    color:#006699;
+}
+.sources{
+	list-style-type:none;
+}
 
 
 

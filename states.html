@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+	   <title>Home</title>
+	   <link href="dataweb.css" rel="stylesheet"> 
+	</head>
+
+	<body>
+
+		<header>
+			<!--<img src="assets/cover.jpg" alt="Maidan">-->
+			<nav>
+				<h1>Let&rsquo;s Talk Politics<h1>
+					<ul>
+						<li> 
+							<button type="button" class="bt"> <a href="index.html">Home</a> </button>
+						</li>
+						
+						<li> 
+							<button type="button" class="bt"> <a href="ukraine.html">Ukraine</a></button>
+						</li>
+						<li>
+							<button type="button" class="bt"><a href="syria.html">Syria</a></button>
+					    </li>
+
+					    <li>
+							<button type="button" class="bt"><a href="demo.html">Demo</a></button>
+					    </li>
+
+					    <li>
+							<button type="button" class="bt">States</button>
+					    </li>
+
+					    <li>
+							<button type="button" class="bt"><a href="history.html">History</a></button>
+					    </li>
+
+					    <script type="text/javascript">
+					    var buttons=document.getElementsByClassName("bt");
+					    buttons[4].style.background="#dea821";
+					    </script>
+					</ul>
+			</nav>
+		</header>
+		<div class = "maincontainer">
+			<div class = "hed1">State Level Analysis</div>
+			
+
+		</div>
+
+
+		<div class = "listcontainer">
+			<ol id= "statelist">
+			</ol>
+		</div>
+
+		<script type="text/javascript">
+
+		stlist= ['MA', 'TN', 'AL', 'NC', 'FL', 'IL', 'KY', 'VA', 'CO', 'AZ', 'MS', 'MI', 'NV', 'AR', 'IA', 'ID', 'TX', 'LA', 'SC', 'ME', 'OH', 'MO', 'GA', 'VT', 'UT', 'OK', 'NH', 'NE']
+		stlist.sort();
+
+		var ol = document.getElementById("statelist");
+
+		for (i = 0; i < stlist.length; i++){
+			var atag = document.createElement('a');
+			var linkText = document.createTextNode(stlist[i]);
+			atag.appendChild(linkText);
+			atag.title = stlist[i]
+			atag.href = stlist[i].toLowerCase() + ".html"
+			atag.id = "statetag"
+			var li =  document.createElement('li');
+			li.id = "stateli"
+			li.appendChild(atag);
+
+			ol.appendChild(li)
+		}
+		
+
+		</script>
+
+	</body>
+
+</html>
