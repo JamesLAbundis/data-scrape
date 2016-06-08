@@ -1,0 +1,38 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   al.html
+#	modified:   ar.html
+#	modified:   az.html
+#	modified:   co.html
+#	modified:   fl.html
+#	modified:   ga.html
+#	modified:   ia.html
+#	modified:   id.html
+#	modified:   il.html
+#	modified:   ky.html
+#	modified:   la.html
+#	modified:   ma.html
+#	modified:   me.html
+#	modified:   mo.html
+#	modified:   ms.html
+#	modified:   nc.html
+#	modified:   ne.html
+#	modified:   nh.html
+#	modified:   nv.html
+#	modified:   oh.html
+#	modified:   ok.html
+#	modified:   sc.html
+#	new file:   statemaps/CA.gif
+#	new file:   statemaps/IA.gif
+#	modified:   tn.html
+#	modified:   tx.html
+#	modified:   ut.html
+#	modified:   va.html
+#	modified:   vt.html
+#
+
