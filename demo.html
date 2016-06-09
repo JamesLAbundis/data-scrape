@@ -45,7 +45,14 @@
 
 			<div class="hed1">Democratic Presidential Primary</div>
 			
-			<p>Below is an in-depth analysis of the Democratic Primary up until late March. The following data was found in a public data set that I then analyzed and aggregated. 28 states are included in total. The analysis studys factors such as race, sex, income, etc., that contribute to the fraction of the vote each candidate wins. A multi-variable linear regression model was used to test these factors and predict future primaries.</p>
+			<p>Below is an in-depth analysis of the Democratic Primary up until late March. The following data was found in a public data set that was then analyzed and aggregated. 28 states are included in total. The analysis studies factors such as race, sex, income, and a few more that contribute to the fraction of the vote each candidate won in the Democratic Presidential Primary. A multi-variable linear regression model was used to test these factors and predict future primaries.</p>
+
+			<div class = "hed4">State Graphs</div>
+			<p><a href="states.html">Click </a>to see state results included in this data set. 
+			</p>
+		
+				
+	
 		
 
 			<div class="hed3">The Candidates</div>
@@ -65,7 +72,7 @@
 			</div>
 
 			<div class="hed3">Socio-Economic Factors</div>
-			<p>In order to build a proper model to predict future primaries, one must first analyze previous primaries. In the following scatter plots we look at how race, education, sex, economic class, population, and age contribute to each candidates fraction of the vote. Some of these factors contribute more than others to the final outcome, but nonetheless are worth exploring.The fraction of the vote is the response variable and the factors mentioned above are the predictor variables. </p>
+			<p>In order to build a proper model for predicting future state primaries, one must first analyze previous primaries. In the following scatter plots we look at how race, education, sex, economic class, population, and age contribute to each candidate's fraction of the vote. Some of these factors contribute more than others to the final outcome, but nonetheless are worth exploring.The fraction of the vote is the response variable and the factors mentioned above are the predictor variables. </p>
 		
 			<div class="graphcontainer"> 
 	
@@ -85,7 +92,7 @@
 				<div class="hed4">Age</div>
 			
 				<p>The following graph shows the correlation between the average percent of people over 65 years of age in every state and the fraction of the vote each candidate received.</p>
-				<p>Hovering over each point will show information on what state it represents and the fraction of the vote the candidate won for that state.</p>
+			
 			
 				<div id="charts">
 					<iframe width="600" height="500" frameborder="0" scrolling="no" link="false"src="https://plot.ly/~jlabundi/4.embed?link=false"></iframe>
@@ -97,7 +104,7 @@
 				<div class="hed4">Education</div>
 
 				<p>The following graph shows the correlation between the average percent of people who have achieved education equal to or greater than completing high school in every state and the fraction of the vote each candidate received.</p>
-				<p>Hovering over each point will show information on what state it represents and the fraction of the vote the candidate won for that state.</p>
+			
 
 				<div id="charts">
 					<iframe width="600" height="500" frameborder="0" scrolling="no" link="false" src="https://plot.ly/~jlabundi/9.embed?link=false"></iframe>
@@ -109,7 +116,7 @@
 				<div class="hed4">Economic Class</div>
 
 				<p>The following graph shows the correlation between the average median income in every state and the fraction of the vote each candidate received.</p>
-				<p>Hovering over each point will show information on what state it represents and the fraction of the vote the candidate won for that state.</p>
+				
 
 				<div id="charts">
 					<iframe width="600" height="500" frameborder="0" scrolling="no" link="false" src="https://plot.ly/~jlabundi/13.embed?link=false"></iframe>
@@ -121,7 +128,7 @@
 				<div class="hed4">Race</div>
 
 				<p>The following graph shows the correlation between the average percent of white-only citizens in every state and the fraction of the vote each candidate received.</p>
-				<p>Hovering over each point will show information on what state it represents and the fraction of the vote the candidate won for that state.</p>
+			
 
 				<div id="charts">
 					<iframe width="600" height="500" frameborder="0" scrolling="no" link="false" src="https://plot.ly/~jlabundi/7.embed?link=false"></iframe>
@@ -133,8 +140,7 @@
 				<div class="hed4">Population</div>
 
 				<p>The following graph shows the correlation between the average population density in every state and the fraction of the vote each candidate received.</p>
-				<p>Hovering over each point will show information on what state it represents and the fraction of the vote the candidate won for that state.</p>
-
+			
 				<div id="charts">
 					<iframe width="600" height="500" frameborder="0" scrolling="no" link="false" src="https://plot.ly/~jlabundi/15.embed?link=false"></iframe>
 				</div>
@@ -146,9 +152,9 @@
 	
 				<p>This graph shows the extent to which each socio-economic factor contributed to the fraction of the vote won by each candidate. The higher the R-Squared value, the stronger the relationship is between a socio-economic factor and the fraction of the vote. According to my analysis, education, race, and income are the strongest indicators of how much of the vote each candidate will win.</p>
 	
-				<p>R-Squared values are interpreted as the following: Values closer to 1 suggest a stronger correlation (relationship) between two variables, values closer to 0 suggest a weaker correlation (relationship) between two variables. 
+				<p>R-Squared values are interpreted as the following: Values closer to 1 suggest a stronger correlation (relationship) between two variables, values closer to 0 suggest a weaker correlation between two variables. 
 				</p>
-				<p>Slope should be interpreted as the following: a negative slope suggests a negative correlation (relationship) between two variables and a positive slope will just be the opposite of this. For example a negative slope between education and the fraction of the vote for Hillary Clinton suggests that as a population's education increases, the fraction of the vote for Hillary Clinton will decrease.
+				<p>Slope should be interpreted as the following: a negative slope suggests a negative correlation between two variables and a positive slope will just be the opposite of this. For example a negative slope between education and the fraction of the vote for Hillary Clinton suggests that as a population's education increases, the fraction of the vote for Hillary Clinton will decrease.
 				</p>
 
 				<p>Hover over each bar to display the R-Squared value and the slope, which will indicate a positive or negative correlation.</p>
@@ -167,7 +173,7 @@
 				<div class="hed4">Model Predictions For Past Primaries</div>
 
 				<p> The following graph shows what the model predicted for primaries that have occurred after late March up until the end of May. Not only does this graph show who the predicted winner is, but it shows the estimated margin between the two candidates. </p>
-				<p> Since these primaries have already occurred we can find whether the model predicted correctly. Hovering over each bar will show whether the prediction was true or false.</p>
+				<p> Since these primaries have already occurred we can find whether the model predicted correctly. Hovering over each bar will show whether the prediction was correct or false.</p>
 
 				<div id="charts">
 					<iframe width="600" height="500" frameborder="0" scrolling="no" link="false"src="https://plot.ly/~jlabundi/0.embed?link=false"></iframe>
@@ -197,7 +203,10 @@ imgcontai
 			</div> 
 
 			<div class="hed3">Conclusion</div>
-			<p>My analysis in conclusion has brought up interesting trends that have even taken me by surprise. Part of my motivation to study the Democratic Presidential Primary was to find my own conclusions about why or why not certain candidates were winning or losing. The media to some extent has claimed that Sanders does better among states with large white populations and Clinton fairs better with larger women and minority populations. My analysis however disconfirms most of these claims and has found that each candidate has support from all ages and both genders. Race is a factor in determining the fraction of the vote, however the correlation is not as strong as the media claimed it to be.</p>
+			<p>My analysis in conclusion has brought up interesting trends that have even taken me by surprise. Part of my motivation to study the Democratic Presidential Primary was to find my own conclusions about why or why not certain candidates were winning or losing. The media to some extent has claimed that Sanders does better among states with large white populations and Clinton fairs better with larger women and minority populations. My analysis however disconfirms some of these claims and has found that each candidate has support from all ages and both genders. Race is a factor in determining the fraction of the vote, however the correlation is not as strong as the media claimed it to be.</p>
+
+			<p> Looking at the socio-econmic factors that were the strongest indicators of who would in each state primary I can conlude the following: As the data shows, the ideal voter demographic for Bernie Sanders is a white, middle-upper class to upper class, and well educated population. The ideal voter demographic for Hillary Clinton is a minority, lower class, and poor education population. 	
+			</p>
 
 			<p>It is also important to note the following: My model does not reflect several media influences that shape the outcome of the Democratic Presidential Primary. Other factors such as candidate likeability, candidate scandals, and key events during the course of a Democratic Presidential Primary can affect state primary results significantly. Despite doing my best to make an accurate model, I would not be surprised if my predictions for the June 7th super Tuesday are proven wrong. I will post a more in depth post-analysis after the 2016 Democratic Presidential Primary has finished. Stay tuned and as always, thank you for reading. </p>
 
