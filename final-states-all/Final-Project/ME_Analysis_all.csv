@@ -1,0 +1,21 @@
+,id,state,state_abbreviation,county,party,candidate,fraction_votes,AGE775214,RHI825214,EDU635213,SEX255214,INC110213,POP060210
+0,0,Maine,ME,Cumberland,Democrat,Bernie Sanders,0.556,16.4,91.0,93.7,51.4,57461,337.2
+1,1,Maine,ME,Cumberland,Democrat,Hillary Clinton,0.444,16.4,91.0,93.7,51.4,57461,337.2
+2,2,Maine,ME,Franklin,Democrat,Bernie Sanders,0.667,19.2,95.9,91.5,51.0,41626,18.1
+3,3,Maine,ME,Franklin,Democrat,Hillary Clinton,0.33299999999999996,19.2,95.9,91.5,51.0,41626,18.1
+4,4,Maine,ME,Hancock,Democrat,Bernie Sanders,0.6,21.5,95.2,92.5,51.2,47460,34.3
+5,5,Maine,ME,Hancock,Democrat,Hillary Clinton,0.4,21.5,95.2,92.5,51.2,47460,34.3
+6,6,Maine,ME,Knox,Democrat,Bernie Sanders,1.0,22.4,95.9,92.8,50.6,49755,108.8
+7,7,Maine,ME,Knox,Democrat,Hillary Clinton,0.0,22.4,95.9,92.8,50.6,49755,108.8
+8,8,Maine,ME,Lincoln,Democrat,Bernie Sanders,0.556,25.3,96.3,93.0,51.0,50181,75.6
+9,9,Maine,ME,Lincoln,Democrat,Hillary Clinton,0.444,25.3,96.3,93.0,51.0,50181,75.6
+10,10,Maine,ME,Oxford,Democrat,Bernie Sanders,0.667,19.3,95.8,89.7,50.4,40674,27.8
+11,11,Maine,ME,Oxford,Democrat,Hillary Clinton,0.33299999999999996,19.3,95.8,89.7,50.4,40674,27.8
+12,12,Maine,ME,Penobscot,Democrat,Bernie Sanders,0.8,16.5,94.1,90.7,50.6,43734,45.3
+13,13,Maine,ME,Penobscot,Democrat,Hillary Clinton,0.2,16.5,94.1,90.7,50.6,43734,45.3
+14,14,Maine,ME,Waldo,Democrat,Hillary Clinton,0.0,19.7,96.0,91.2,51.0,42221,53.1
+15,15,Maine,ME,Waldo,Democrat,Bernie Sanders,0.0,19.7,96.0,91.2,51.0,42221,53.1
+16,16,Maine,ME,Washington,Democrat,Bernie Sanders,0.667,22.0,90.3,87.2,50.7,37236,12.8
+17,17,Maine,ME,Washington,Democrat,Hillary Clinton,0.33299999999999996,22.0,90.3,87.2,50.7,37236,12.8
+18,18,Maine,ME,York,Democrat,Bernie Sanders,0.595,18.0,94.8,91.9,51.3,57348,199.0
+19,19,Maine,ME,York,Democrat,Hillary Clinton,0.405,18.0,94.8,91.9,51.3,57348,199.0

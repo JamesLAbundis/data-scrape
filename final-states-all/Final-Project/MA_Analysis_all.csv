@@ -1,0 +1,65 @@
+,id,state,state_abbreviation,county,party,candidate,fraction_votes,AGE775214,RHI825214,EDU635213,SEX255214,INC110213,POP060210
+0,0,Massachusetts,MA,Barnstable,Democrat,Bernie Sanders,0.516,27.8,91.4,94.5,52.4,60526,548.3
+1,1,Massachusetts,MA,Barnstable,Democrat,Hillary Clinton,0.474,27.8,91.4,94.5,52.4,60526,548.3
+2,2,Massachusetts,MA,Barnstable,Democrat, No Preference,0.005,27.8,91.4,94.5,52.4,60526,548.3
+3,3,Massachusetts,MA,Essex,Democrat,Bernie Sanders,0.546,15.6,73.3,89.0,51.8,67311,1508.8
+4,4,Massachusetts,MA,Essex,Democrat,Hillary Clinton,0.45,15.6,73.3,89.0,51.8,67311,1508.8
+5,5,Massachusetts,MA,Essex,Democrat, No Preference,0.001,15.6,73.3,89.0,51.8,67311,1508.8
+6,6,Massachusetts,MA,Franklin,Democrat,Bernie Sanders,0.499,18.2,91.5,92.0,51.2,53663,102.1
+7,7,Massachusetts,MA,Franklin,Democrat,Hillary Clinton,0.489,18.2,91.5,92.0,51.2,53663,102.1
+8,8,Massachusetts,MA,Franklin,Democrat, No Preference,0.006999999999999999,18.2,91.5,92.0,51.2,53663,102.1
+9,9,Massachusetts,MA,Hampden,Democrat,Bernie Sanders,0.527,15.3,65.0,83.7,51.7,49094,751.0
+10,10,Massachusetts,MA,Hampden,Democrat,Hillary Clinton,0.44799999999999995,15.3,65.0,83.7,51.7,49094,751.0
+11,11,Massachusetts,MA,Hampden,Democrat, No Preference,0.021,15.3,65.0,83.7,51.7,49094,751.0
+12,12,Massachusetts,MA,Nantucket,Democrat,Bernie Sanders,0.514,13.4,76.7,94.0,48.9,85478,226.2
+13,13,Massachusetts,MA,Nantucket,Democrat,Hillary Clinton,0.478,13.4,76.7,94.0,48.9,85478,226.2
+14,14,Massachusetts,MA,Nantucket,Democrat, No Preference,0.005,13.4,76.7,94.0,48.9,85478,226.2
+15,15,Massachusetts,MA,Norfolk,Democrat,Bernie Sanders,0.5529999999999999,15.7,77.8,93.7,52.1,84916,1693.6
+16,16,Massachusetts,MA,Norfolk,Democrat,Hillary Clinton,0.439,15.7,77.8,93.7,52.1,84916,1693.6
+17,17,Massachusetts,MA,Norfolk,Democrat, No Preference,0.003,15.7,77.8,93.7,52.1,84916,1693.6
+18,18,Massachusetts,MA,Plymouth,Democrat,Bernie Sanders,0.529,16.2,83.7,92.1,51.4,75092,750.9
+19,19,Massachusetts,MA,Plymouth,Democrat,Hillary Clinton,0.461,16.2,83.7,92.1,51.4,75092,750.9
+20,20,Massachusetts,MA,Plymouth,Democrat, No Preference,0.006999999999999999,16.2,83.7,92.1,51.4,75092,750.9
+21,21,Massachusetts,MA,Worcester,Democrat,Hillary Clinton,0.504,14.1,78.8,89.4,50.7,65223,528.6
+22,22,Massachusetts,MA,Worcester,Democrat,Bernie Sanders,0.483,14.1,78.8,89.4,50.7,65223,528.6
+23,23,Massachusetts,MA,Worcester,Democrat, No Preference,0.006,14.1,78.8,89.4,50.7,65223,528.6
+24,0,Massachusetts,MA,Barnstable,Republican,Donald Trump,0.542,27.8,91.4,94.5,52.4,60526,548.3
+25,1,Massachusetts,MA,Barnstable,Republican,John Kasich,0.171,27.8,91.4,94.5,52.4,60526,548.3
+26,2,Massachusetts,MA,Barnstable,Republican,Marco Rubio,0.145,27.8,91.4,94.5,52.4,60526,548.3
+27,3,Massachusetts,MA,Barnstable,Republican,Ted Cruz,0.085,27.8,91.4,94.5,52.4,60526,548.3
+28,4,Massachusetts,MA,Barnstable,Republican,Ben Carson,0.028999999999999998,27.8,91.4,94.5,52.4,60526,548.3
+29,5,Massachusetts,MA,Essex,Republican,Donald Trump,0.431,15.6,73.3,89.0,51.8,67311,1508.8
+30,6,Massachusetts,MA,Essex,Republican,John Kasich,0.23399999999999999,15.6,73.3,89.0,51.8,67311,1508.8
+31,7,Massachusetts,MA,Essex,Republican,Marco Rubio,0.19699999999999998,15.6,73.3,89.0,51.8,67311,1508.8
+32,8,Massachusetts,MA,Essex,Republican,Ted Cruz,0.071,15.6,73.3,89.0,51.8,67311,1508.8
+33,9,Massachusetts,MA,Essex,Republican,Ben Carson,0.026000000000000002,15.6,73.3,89.0,51.8,67311,1508.8
+34,10,Massachusetts,MA,Franklin,Republican,Donald Trump,0.43,18.2,91.5,92.0,51.2,53663,102.1
+35,11,Massachusetts,MA,Franklin,Republican,Marco Rubio,0.233,18.2,91.5,92.0,51.2,53663,102.1
+36,12,Massachusetts,MA,Franklin,Republican,John Kasich,0.2,18.2,91.5,92.0,51.2,53663,102.1
+37,13,Massachusetts,MA,Franklin,Republican,Ted Cruz,0.092,18.2,91.5,92.0,51.2,53663,102.1
+38,14,Massachusetts,MA,Franklin,Republican,Ben Carson,0.019,18.2,91.5,92.0,51.2,53663,102.1
+39,15,Massachusetts,MA,Hampden,Republican,Donald Trump,0.49200000000000005,15.3,65.0,83.7,51.7,49094,751.0
+40,16,Massachusetts,MA,Hampden,Republican,John Kasich,0.18100000000000002,15.3,65.0,83.7,51.7,49094,751.0
+41,17,Massachusetts,MA,Hampden,Republican,Marco Rubio,0.14400000000000002,15.3,65.0,83.7,51.7,49094,751.0
+42,18,Massachusetts,MA,Hampden,Republican,Ted Cruz,0.11800000000000001,15.3,65.0,83.7,51.7,49094,751.0
+43,19,Massachusetts,MA,Hampden,Republican,Ben Carson,0.038,15.3,65.0,83.7,51.7,49094,751.0
+44,20,Massachusetts,MA,Nantucket,Republican,Donald Trump,0.494,13.4,76.7,94.0,48.9,85478,226.2
+45,21,Massachusetts,MA,Nantucket,Republican,Marco Rubio,0.18,13.4,76.7,94.0,48.9,85478,226.2
+46,22,Massachusetts,MA,Nantucket,Republican,John Kasich,0.152,13.4,76.7,94.0,48.9,85478,226.2
+47,23,Massachusetts,MA,Nantucket,Republican,Ted Cruz,0.102,13.4,76.7,94.0,48.9,85478,226.2
+48,24,Massachusetts,MA,Nantucket,Republican,Ben Carson,0.027999999999999997,13.4,76.7,94.0,48.9,85478,226.2
+49,25,Massachusetts,MA,Norfolk,Republican,Donald Trump,0.41100000000000003,15.7,77.8,93.7,52.1,84916,1693.6
+50,26,Massachusetts,MA,Norfolk,Republican,John Kasich,0.242,15.7,77.8,93.7,52.1,84916,1693.6
+51,27,Massachusetts,MA,Norfolk,Republican,Marco Rubio,0.21,15.7,77.8,93.7,52.1,84916,1693.6
+52,28,Massachusetts,MA,Norfolk,Republican,Ted Cruz,0.08800000000000001,15.7,77.8,93.7,52.1,84916,1693.6
+53,29,Massachusetts,MA,Norfolk,Republican,Ben Carson,0.022000000000000002,15.7,77.8,93.7,52.1,84916,1693.6
+54,30,Massachusetts,MA,Plymouth,Republican,Donald Trump,0.526,16.2,83.7,92.1,51.4,75092,750.9
+55,31,Massachusetts,MA,Plymouth,Republican,John Kasich,0.177,16.2,83.7,92.1,51.4,75092,750.9
+56,32,Massachusetts,MA,Plymouth,Republican,Marco Rubio,0.161,16.2,83.7,92.1,51.4,75092,750.9
+57,33,Massachusetts,MA,Plymouth,Republican,Ted Cruz,0.08800000000000001,16.2,83.7,92.1,51.4,75092,750.9
+58,34,Massachusetts,MA,Plymouth,Republican,Ben Carson,0.024,16.2,83.7,92.1,51.4,75092,750.9
+59,35,Massachusetts,MA,Worcester,Republican,Donald Trump,0.49,14.1,78.8,89.4,50.7,65223,528.6
+60,36,Massachusetts,MA,Worcester,Republican,Marco Rubio,0.174,14.1,78.8,89.4,50.7,65223,528.6
+61,37,Massachusetts,MA,Worcester,Republican,John Kasich,0.145,14.1,78.8,89.4,50.7,65223,528.6
+62,38,Massachusetts,MA,Worcester,Republican,Ted Cruz,0.128,14.1,78.8,89.4,50.7,65223,528.6
+63,39,Massachusetts,MA,Worcester,Republican,Ben Carson,0.032,14.1,78.8,89.4,50.7,65223,528.6
