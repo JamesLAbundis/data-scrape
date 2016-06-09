@@ -1,0 +1,18 @@
+CREATE TABLE used_results (
+    id INTEGER,
+    state TEXT,
+    state_abbreviation TEXT,
+    county TEXT,
+    party TEXT,
+    candidate TEXT,
+    fraction_votes NUMERIC,
+    AGE775214 NUMERIC,
+    RHI825214 NUMERIC,
+    SEX255214 NUMERIC,
+    EDU635213 NUMERIC,
+    INC110213 INTEGER,
+    POP060210 NUMERIC,
+
+    PRIMARY KEY(id)
+    );
+
